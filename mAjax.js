@@ -114,7 +114,7 @@
 		Function
 	------------------*/
 	
-	$.fn.mAjax = function(method) {
+	$.fn.mAjax = function(method) {		
 		if ( mAjax[method] ) {
       return mAjax[method].apply( this, Array.prototype.slice.call( arguments, 1 ));
     } else if ( typeof method === 'object' || ! method ) {

@@ -19,8 +19,8 @@ Router::connectRoot(array('controller' => 'pages', 'action' => 'home'));
 
 // Custom routes
 Router::connect('/page1', array('controller'=> 'pages', 'action' => 'page1'), array('via' => 'GET'));
-Router::connect('/page2', array('controller'=> 'pages', 'action' => 'page1'), array('via' => 'GET'));
-Router::connect('/page3', array('controller'=> 'pages', 'action' => 'page1'), array('via' => 'GET'));
+Router::connect('/page2', array('controller'=> 'pages', 'action' => 'page2'), array('via' => 'GET'));
+Router::connect('/page3', array('controller'=> 'pages', 'action' => 'page3'), array('via' => 'GET'));
 
 // Default routes
 Router::connect('/:controller', array('action' => 'index'), array('via' => 'GET'));

@@ -19,8 +19,19 @@
 		<?php echo $this->element('footer'); ?>
 	</div>
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
-	<script type="text/javascript" src="../../../history.js"></script>	
+	<script type="text/javascript" src="../../../history.js"></script>
 	<script type="text/javascript" src="../../../mAjax.js"></script>
 	<script type="text/javascript" src="../../../mAjaxAuto.js"></script>
+	
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('body').mAjaxAuto({
+				baseUrl : (window.location.href.indexOf('localhost') !== -1) ? "http://localhost:8888/mAjax/demo/app/webroot/" : "http://digi-dil.com/",
+				target : '#container',
+				linkSelectors : '.mAjax-link'
+			});
+		});
+	</script>
+	
 </body>
 </html>
